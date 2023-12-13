@@ -1,0 +1,121 @@
+.calculator {
+  margin-top: 72px;
+  // .calculator__container
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 1536px) {
+      flex-direction: column;
+    }
+  }
+
+  &__content {
+    @media (max-width: 1536px) {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 40px;
+    }
+    @media (max-width: 1024px) {
+      flex-direction: column;
+    }
+  }
+
+  // .calculator__form
+
+  &__form {
+    background-color: #fff;
+    padding: 24px 130px;
+    border-radius: 16px;
+    text-align: center;
+    @media (max-width: 1536px) {
+      padding: 24px clamp(6.25rem, 3.75rem + 12.5vw, 13.125rem);
+    }
+    @media (max-width: 1024px) {
+      padding: 24px 100px;
+    }
+    @media (max-width: 758px) {
+      padding: 24px 35px;
+    }
+    @media (max-width: 640px) {
+      padding: 24px 10px;
+    }
+    @media (max-width: 430px) {
+      padding: 24px 5px;
+    }
+  }
+
+  // .calculator__form-title
+
+  &__form-title {
+    padding-bottom: 16px;
+    font-size: clamp(1rem, 0.682rem + 1.59vw, 1.875rem);
+    font-weight: 700;
+    line-height: 1.2; /* 120% */
+  }
+
+  // .calculator__form-subtitle
+
+  &__form-subtitle {
+    padding-bottom: 28px;
+    font-size: clamp(0.813rem, 0.744rem + 0.34vw, 1rem);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+  }
+}
+.content {
+  // .content__title
+
+  &__txt {
+    padding-right: 16px;
+  }
+  &__title {
+    font-size: clamp(1.25rem, 0.886rem + 1.82vw, 2.25rem);
+    font-weight: 900;
+    line-height: 1.11; /* 111.111% */
+    margin-bottom: 12px;
+    @media (max-width: 1536px) {
+      font-size: 30px;
+    }
+    @media (max-width: 640px) {
+      font-size: 24px;
+    }
+    @media (max-width: 430px) {
+      font-size: 20px;
+    }
+  }
+
+  // .content__text
+
+  &__text {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.4; /* 140% */
+    margin-bottom: 16px;
+
+    @media (max-width: 640px) {
+      font-size: 16px;
+    }
+    @media (max-width: 430px) {
+      font-size: 14px;
+    }
+  }
+
+  // .content__img
+
+  &__img {
+    border-radius: 16px;
+    @media (max-width: 1526px) {
+      height: clamp(6.25rem, 3.25rem + 15vw, 14.5rem);
+    }
+    @media (max-width: 1024px) {
+      height: 350px;
+    }
+    @media (max-width: 640px) {
+      height: 250px;
+    }
+    @media (max-width: 430px) {
+      height: 200px;
+    }
+  }
+}
