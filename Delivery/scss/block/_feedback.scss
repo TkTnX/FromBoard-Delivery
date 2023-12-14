@@ -1,0 +1,127 @@
+.feedback {
+  // .feedback__container
+
+  &__container {
+  }
+
+  // .feedback__title
+
+  &__title {
+    padding-bottom: 32px;
+  }
+
+  // .feedback__slider
+
+  &__slider {
+    position: relative;
+  }
+}
+
+.swiper {
+  overflow: hidden;
+}
+.swiper-wrapper {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 70px;
+
+}
+.swiper-slide {
+  // .swiper-slide__card
+  cursor: pointer;
+
+  &__card {
+    background-color: #fff;
+    width: 625px;
+    padding: 32px 32px 8px;
+    border-radius: 16px;
+    @media (max-width: 1536px) {
+      width: 400px;
+    }
+    @media (max-width: 1024px) {
+      width: 570px;
+      padding: 32px 16px 8px;
+      margin-left: 45px;
+      margin-top: 20px;
+    }
+  }
+
+  // .swiper-slide__title
+
+  &__title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.33; /* 133.333% */
+    @media (max-width: 1536px) {
+      font-size: 18px;
+    }
+  }
+
+  // .swiper-slide__bottom
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+  }
+
+  // .swiper-slide__name
+
+  &__name {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.33; /* 133.333% */
+    @media (max-width: 1536px) {
+      font-size: 16px;
+    }
+  }
+
+  // .swiper-slide__quote
+}
+.slider-button {
+  position: absolute;
+  top: 35%;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  @media (max-width: 1800px) {
+    justify-content: start;
+    align-items: center;
+    top: -70px;
+    left: 10%;
+    gap: 10px;
+  }
+  @media (max-width: 1024px) {
+    top: -50px;
+    left: 15%;
+  }
+}
+
+.feedback-slider-btn {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  @media (max-width: 1024px) {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+.swiper-button-prev {
+  position: absolute;
+  left: -47px;
+  @media (max-width: 1800px) {
+    position: static;
+  }
+}
+
+.swiper-button-next {
+  position: absolute;
+  right: -47px;
+  @media (max-width: 1800px) {
+    position: static;
+
+    transform: translate(0);
+  }
+}

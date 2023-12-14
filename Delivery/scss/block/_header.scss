@@ -122,10 +122,6 @@
     }
   }
   .content-bottom {
-    // .content-bottom__container
-
-    &__container {
-    }
 
     // .content-bottom__list
 
@@ -158,12 +154,11 @@
     @media (max-width: 570px) {
       font-size: clamp(0.875rem, 0.739rem + 0.68vw, 1.25rem);
     }
-    @media (max-width: 405px) {
+    @media (max-width: 430px) {
       display: none;
     }
   }
   &__img {
     max-width: clamp(1.563rem, 0.994rem + 2.84vw, 3.125rem);
-
   }
 }
