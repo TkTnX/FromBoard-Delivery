@@ -1,4 +1,5 @@
 /* Reset and base styles  */
+
 * {
   padding: 0px;
   margin: 0px;
@@ -9,6 +10,10 @@
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 :focus,

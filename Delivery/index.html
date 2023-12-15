@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FromBoard Delivery | Доставляем товары из заграницы в Россию</title>
     <link rel="stylesheet" href="./scss/css/main.css" />
-    <script src="./js/swiper.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/script.js" defer></script>
   </head>
   <body>
@@ -48,16 +48,16 @@
             <nav class="nav__menu">
               <ul class="menu__body">
                 <li class="menu__item">
-                  <a href="#" class="menu__link">Калькулятор</a>
+                  <a href="#calculator" class="menu__link">Калькулятор</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#" class="menu__link">О нас</a>
+                  <a href="#advantages" class="menu__link">О нас</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#" class="menu__link">Гарантии</a>
+                  <a href="#garanties" class="menu__link">Гарантии</a>
                 </li>
                 <li class="menu__item">
-                  <a href="#" class="menu__link">Отзывы</a>
+                  <a href="#feedback" class="menu__link">Отзывы</a>
                 </li>
               </ul>
               <button class="menu__button">Оставить заявку</button>
@@ -81,13 +81,13 @@
         </div>
       </header>
       <main>
-        <section class="calculator">
+        <section class="calculator" id="calculator">
           <div class="calculator__container">
             <div class="calculator__content">
               <div class="content__txt">
                 <div class="content__title">
-                  Без проблемная доставка купленных вещей из США, Европы и Азии
-                  в Россию
+                  Беспроблемная доставка купленных вещей из США, Европы и Азии в
+                  Россию
                 </div>
                 <div class="content__text">
                   Сэкономьте на покупках и наслаждайтесь мировыми брендами — наш
@@ -168,7 +168,7 @@
             </div>
           </div>
         </section>
-        <section class="advantages">
+        <section class="advantages" id="advantages">
           <div class="advantages__container">
             <div class="advantages__title">
               <h2 class="title-2">Наши преимущества</h2>
@@ -238,7 +238,7 @@
             </ul>
           </div>
         </section>
-        <section class="garanties">
+        <section class="garanties" id="garanties">
           <div class="garanties__container">
             <div class="garanties__title">
               <h2 class="title-2">Гарантии качества</h2>
@@ -294,13 +294,12 @@
             </div>
           </div>
         </section>
-        <!-- <section class="feedback">
+        <section class="feedback" id="feedback">
           <div class="feedback__container">
             <div class="feedback__title title-2">Отзывы</div>
             <div class="feedback__slider">
               <div class="swiper feedback-slider">
                 <div class="swiper-wrapper">
-
                   <div class="swiper-slide feedback-slide">
                     <div class="swiper-slide__card">
                       <div class="swiper-slide__title">
@@ -426,7 +425,7 @@
               </div>
             </div>
           </div>
-        </section> -->
+        </section>
         <section class="questions">
           <div class="questions__container">
             <div class="questions__inner">
@@ -464,6 +463,58 @@
             </div>
           </div>
         </section>
+        <footer class="footer">
+          <div class="footer__container">
+            <div class="footer__top">
+              <div class="footer__logo">
+                <div class="footer__logo-img">
+                  <img src="./img/header/logo.svg" alt="" class="logo__img" />
+                  <h1 class="logo__title">FromBoard Delivery</h1>
+                </div>
+                <div class="footer__copyright">
+                  2023 © Ни одно право не защищено, копируйте сколько влезет
+                </div>
+              </div>
+              <nav class="footer__nav">
+                <ul class="footer__list">
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Калькулятор</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">О нас</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Гарантии</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Отзывы</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="footer__number">
+                <a href="tel:+7 (800) 123 45-67" class="footer-phone"
+                  >+7 (800) 123 45-67</a
+                >
+                <div class="footer__number-text">
+                  Звонки по России бесплатны
+                </div>
+              </div>
+            </div>
+            <div class="footer__bottom">
+              <div class="footer__bottom-left">
+                НЕ ЯВЛЯЕТСЯ ПУБЛИЧНОЙ ОФЕРТОЙ. Просим обратить внимание на то,
+                что цены носят информационный и ознакомительный характер, а
+                значит ни в какой мере не являются публичной офертой, которая
+                определена в ст. 437 ГК РФ. Вся информация на сайте может
+                содержать неточности, орфографические и иные ошибки, она не
+                является полной, окончательно и исчерпывающей
+              </div>
+              <div class="footer__bottom-right">
+                Разработкой занимался <span>Галиакбаров Тимур</span>
+              </div>
+            </div>
+          </div>
+        </footer>
       </main>
     </div>
   </body>

@@ -15,6 +15,7 @@ if (burger && menu) {
 const swiper = new Swiper(".feedback-slider", {
   // Optional parameters
   slidesPerView: 1,
+  spaceBetween: 200,
   loop: true,
 
   // Navigation arrows
@@ -23,9 +24,9 @@ const swiper = new Swiper(".feedback-slider", {
     prevEl: ".swiper-button-prev",
   },
   breakpoints: {
-    1024: {
+    1536: {
       slidesPerView: 2,
-      spaceBetween: -70,
+      spaceBetween: 20,
     },
   },
 });

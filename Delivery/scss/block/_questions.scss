@@ -1,8 +1,5 @@
 .questions {
-  // .questions__container
 
-  &__container {
-  }
 
   // .questions__inner
 
@@ -33,10 +30,6 @@
     padding-bottom: 32px;
   }
 
-  // .questions__form
-
-  &__form {
-  }
 
   // .questions__forma
 
@@ -49,28 +42,8 @@
     }
   }
 
-  // .questions__name
-
-  &__name {
-  }
-
-  // .questions__mail
-
-  &__mail {
-  }
-
-  // .questions__phone
-
-  &__phone {
-  }
-
-  // .questions__theme
-
-  &__theme {
-  }
 }
-.input {
-}
+
 .form {
   // .form__message
 
@@ -81,5 +54,7 @@
 }
 
 .input {
-  width: 100%;
+  @media (max-width: 515px) {
+    width: 100%;
+  }
 }
