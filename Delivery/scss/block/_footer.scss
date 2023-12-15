@@ -2,7 +2,6 @@
   background-color: var(--textColor);
   padding: 40px 0;
 
-
   // .footer__top
 
   &__top {
@@ -43,19 +42,20 @@
     font-size: 12px;
   }
 
-
-
   // .footer__list
 
   &__list {
     display: flex;
     align-items: center;
     gap: 24px;
+    @media (max-width: 1536px) {
+      margin: 0 10px;
+      width: 100%;
+    }
     @media (max-width: 390px) {
       flex-direction: column;
     }
   }
-
 
   // .footer__link
 
@@ -111,7 +111,6 @@
     }
   }
 }
-
 
 .footer-phone {
   color: #f9fafb;

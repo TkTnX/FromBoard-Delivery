@@ -964,6 +964,12 @@ legend {
   align-items: center;
   gap: 24px;
 }
+@media (max-width: 1536px) {
+  .footer__list {
+    margin: 0 10px;
+    width: 100%;
+  }
+}
 @media (max-width: 390px) {
   .footer__list {
     flex-direction: column;
